@@ -22,29 +22,66 @@ Partial Class formdata
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dgvdata = New System.Windows.Forms.DataGridView()
+        Me.btnhps = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txnama = New System.Windows.Forms.TextBox()
+        CType(Me.dgvdata, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'dgvdata
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(13, 93)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1018, 492)
-        Me.DataGridView1.TabIndex = 0
+        Me.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvdata.Location = New System.Drawing.Point(13, 93)
+        Me.dgvdata.Name = "dgvdata"
+        Me.dgvdata.Size = New System.Drawing.Size(1018, 492)
+        Me.dgvdata.TabIndex = 0
+        '
+        'btnhps
+        '
+        Me.btnhps.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnhps.Location = New System.Drawing.Point(28, 12)
+        Me.btnhps.Name = "btnhps"
+        Me.btnhps.Size = New System.Drawing.Size(197, 56)
+        Me.btnhps.TabIndex = 1
+        Me.btnhps.Text = "HAPUS DATA "
+        Me.btnhps.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(260, 30)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(76, 20)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Cari Data"
+        '
+        'txnama
+        '
+        Me.txnama.Location = New System.Drawing.Point(353, 32)
+        Me.txnama.Name = "txnama"
+        Me.txnama.Size = New System.Drawing.Size(149, 20)
+        Me.txnama.TabIndex = 3
         '
         'formdata
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1043, 597)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.txnama)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnhps)
+        Me.Controls.Add(Me.dgvdata)
         Me.Name = "formdata"
         Me.Text = "formdata"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvdata, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvdata As System.Windows.Forms.DataGridView
+    Friend WithEvents btnhps As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txnama As TextBox
 End Class

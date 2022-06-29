@@ -42,6 +42,8 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.dgvhasil = New System.Windows.Forms.DataGridView()
+        CType(Me.dgvhasil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -65,7 +67,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 65)
+        Me.Label2.Location = New System.Drawing.Point(12, 62)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(35, 20)
         Me.Label2.TabIndex = 0
@@ -182,16 +184,16 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(40, 463)
+        Me.Button1.Location = New System.Drawing.Point(16, 466)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(96, 55)
+        Me.Button1.Size = New System.Drawing.Size(293, 55)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "INPUT DATA"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(521, 65)
+        Me.Button2.Location = New System.Drawing.Point(358, 12)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(96, 55)
         Me.Button2.TabIndex = 2
@@ -200,7 +202,7 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(643, 173)
+        Me.Button3.Location = New System.Drawing.Point(623, 12)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(96, 55)
         Me.Button3.TabIndex = 2
@@ -209,18 +211,30 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(643, 65)
+        Me.Button4.Location = New System.Drawing.Point(491, 12)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(96, 55)
         Me.Button4.TabIndex = 2
         Me.Button4.Text = "URUTAN SAW"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'dgvhasil
+        '
+        Me.dgvhasil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvhasil.Location = New System.Drawing.Point(359, 139)
+        Me.dgvhasil.Margin = New System.Windows.Forms.Padding(2)
+        Me.dgvhasil.Name = "dgvhasil"
+        Me.dgvhasil.RowHeadersWidth = 51
+        Me.dgvhasil.RowTemplate.Height = 24
+        Me.dgvhasil.Size = New System.Drawing.Size(361, 382)
+        Me.dgvhasil.TabIndex = 3
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(811, 599)
+        Me.ClientSize = New System.Drawing.Size(764, 568)
+        Me.Controls.Add(Me.dgvhasil)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button2)
@@ -243,6 +257,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.dgvhasil, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -267,4 +282,5 @@ Partial Class Form1
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents dgvhasil As DataGridView
 End Class
